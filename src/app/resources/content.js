@@ -1,21 +1,21 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Richard',
+    lastName: 'Okonicha',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role: 'Software Engineer | Cloud & Platform',
+    avatar: '/images/avatar.jpeg',
+    location: 'Africa/Lagos',
+    languages: ['English'], // Reflects your native proficiency
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Subscribe to {person.firstName}'s Insights</>,
+    description: <>Stay updated with my thoughts on cloud innovation, AI advancements, and tips for tech entrepreneurs.</>
 }
 
 const social = [
@@ -24,37 +24,38 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/richardokonicha',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/richardokonicha/',
     },
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://www.x.com/@richardokonicha/',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:richardokonicha@gmail.com',
     },
 ]
 
 const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    description: `Showcasing my journey in cloud and AI as a ${person.role}`,
+    headline: <>Empowering Innovation with Cloud and AI</>,
+    subline: <>
+        I'm Rich*, a passionate Cloud & Platform Engineer at <InlineCode>Fugoku</InlineCode>. With over a decade of experience, I build scalable solutions, lead teams, and create tools that enable businesses to thrive in the era of AI.
+    </>
 }
-
 const about = {
     label: 'About',
-    title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    title: 'About Me',
+    description: `Meet ${person.name}, ${person.role} based in ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -64,24 +65,24 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://app.cal.com/richardokonicha'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Rich* is a Senior Fullstack Engineer and Entrepreneur with a passion for leveraging Cloud and AI to transform businesses. At Fugoku, he designs scalable platforms that empower companies to deliver services, and ai products to their customers.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
+                company: 'Fugoku',
                 timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                role: 'Software Architect',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Developed and optimized cloud-based solutions, boosting efficiency by 30% for key clients.</>,
+                    <>Integrated AI systems into client workflows, improving decision-making and reducing operational costs by 20%.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -95,36 +96,61 @@ const about = {
             {
                 company: 'Creativ3',
                 timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                role: 'Lead Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Designed and deployed cloud infrastructure for enterprise clients, reducing downtime by 40%.</>,
+                    <>Led a team to create AI-powered tools for predictive analytics, resulting in a 15% increase in revenue for clients.</>
                 ],
-                images: [ ]
+                images: [ // optional: leave the array empty if you don't want to display images
+                    {
+                        src: '/images/projects/project-01/cover-01.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    }
+                ]
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of Nigeria',
+                description: <>Bachelor's degree in Software Engineering, focusing on cloud systems.</>,
             },
             {
                 name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                description: <>Advanced courses in AI integration and cloud application development.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Technical Skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Cloud Architecture',
+                description: <>Designing scalable, secure, and efficient cloud solutions for diverse industries.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-02.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/cover-03.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'AI Systems',
+                description: <>Developing and integrating AI-driven workflows to enhance productivity and decision-making.</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
@@ -152,9 +178,12 @@ const about = {
                     },
                 ]
             }
+
         ]
     }
 }
+
+
 
 const blog = {
     label: 'Blog',
