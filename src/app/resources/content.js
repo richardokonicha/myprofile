@@ -47,9 +47,9 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Showcasing my journey in cloud and AI as a ${person.role}`,
-    headline: <>Empowering Innovation with Cloud and AI</>,
+    headline: <>Maximize business with Technology</>,
     subline: <>
-        I'm Rich*, a passionate Cloud & Platform Engineer at <InlineCode>Fugoku</InlineCode>. With over a decade of experience, I build scalable solutions, lead teams, and create tools that enable businesses to thrive in the era of AI.
+        <p> I'm <InlineCode>Richard</InlineCode>, Senior Software Engineer and Entrepreneur with a decade of experience across startups and large-scale operations, and engineering teams.</p><p>I'm known for clear communication and brilliant problem solving.</p>
     </>
 }
 const about = {
@@ -70,7 +70,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Rich* is a Senior Fullstack Engineer and Entrepreneur with a passion for leveraging Cloud and AI to transform businesses. At Fugoku, he designs scalable platforms that empower companies to deliver services, and ai products to their customers.</>
+        description: <>Richard is a Senior Fullstack Engineer and Entrepreneur with a passion for leveraging Cloud and AI to transform businesses. Designs scalable platforms that empower companies to deliver services, and ai products to their customers.</>
     },
     work: {
         display: true,
@@ -82,34 +82,104 @@ const about = {
                 role: 'Software Architect',
                 achievements: [
                     <>Developed and optimized cloud-based solutions, boosting efficiency by 30% for key clients.</>,
-                    <>Integrated AI systems into client workflows, improving decision-making and reducing operational costs by 20%.</>
+                    <>Integrated AI systems into client workflows, improving decision-making and reducing operational costs by 20%.</>,
+                    <>Designs scalable platforms that empower companies to deliver services, and ai products to their customers.</>
+
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/cover-006.png',
+                        alt: 'Fugoku',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
+                company: 'All Hands AI',
                 timeframe: '2018 - 2022',
                 role: 'Lead Developer',
                 achievements: [
                     <>Designed and deployed cloud infrastructure for enterprise clients, reducing downtime by 40%.</>,
                     <>Led a team to create AI-powered tools for predictive analytics, resulting in a 15% increase in revenue for clients.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/project-01/cover-002.jpeg',
+                        alt: 'Open Devin Project,',
                         width: 16,
                         height: 9
                     }
                 ]
-            }
+            },
+            {
+                company: 'Swell',
+                timeframe: '2022 - 2023',
+                role: 'Senior Software Engineer (Storefront)',
+                achievements: [
+                    <>I led the Storefront Team, driving significant code contributions to the origin swell theme and store platform editor, resulting in the successful securing of $20M in Series A funding.</>,
+                    <>Managed comprehensive release notes, introduced new features, and provided responsive support to client inquiries, ensuring a seamless and innovative user experience.</>
+                ],
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-001.jpeg',
+                        alt: 'Swell',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/cover-004.jpeg',
+                        alt: 'Swell',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: 'Cardagraph',
+                timeframe: '2020 - 2021',
+                role: 'Senior Software Engineer & Architect ( Core )',
+                achievements: [
+                    <>Cardagraph is a software platform that predicts product delivery timelines using real data. They allow users to simulate adjustments to scope and resources</>,
+                    <>Develop front-end interfaces and integrated UI data components based on product designs.</>,
+                    <>Implemented new interfaces for Reports, Groups, and People modules for module data analysis.</>,
+                    <>Integrated data platform with Cardagraph-core machine learning engine via Restful API.</>
+                ],
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-003.jpeg',
+                        alt: 'Cardagraph',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/cover-00.jpeg',
+                        alt: 'Gdg',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+            {
+                company: 'eHealth4everyone',
+                timeframe: '2018 - 2020',
+                role: 'Team Lead ( Python App Development Team ) ',
+                achievements: [
+                    <>Led a team of 6 in the development of the Integrated supportive supervison system for the ministry of health for their health data collection requirements.</>,
+                    <>Architected our microservice OpenHisa health insurance management system for the Ministry of Health, if was deployed in 12 states to standardize the insurance in these states.</>,
+                    <>Deployed and maintained services with over 10,000 active users using Docker, Kubernetes, and Traefik.</>,
+                    <>Conducted refactoring of services to reduce latency, code review sessions, and provided team reports.</>
+                ],
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-005.jpeg',
+                        alt: 'eHealth4everyone',
+                        width: 16,
+                        height: 9
+                    }
+                ]
+            },
+
         ]
     },
     studies: {
@@ -117,12 +187,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Nigeria',
-                description: <>Bachelor's degree in Software Engineering, focusing on cloud systems.</>,
+                name: 'Harvard University',
+                description: <>Advanced courses in Memory Management, Data Structures, Web Technologies, Distributed Systems, AI integration and cloud application development. with Course Director: Dr. David Mulan (Ph.D.)</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Advanced courses in AI integration and cloud application development.</>,
+                name: 'University of Nigeria',
+                description: <>Bachelor's degree in Mechanical Engineering, several courses on engineering management, engineering design, systems design, safety and physics</>,
             }
         ]
     },
@@ -131,7 +201,19 @@ const about = {
         title: 'Technical Skills',
         skills: [
             {
-                title: 'Cloud Architecture',
+                title: 'Full Stack',
+                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Cloud',
                 description: <>Designing scalable, secure, and efficient cloud solutions for diverse industries.</>,
                 images: [
                     {
@@ -160,18 +242,6 @@ const about = {
                     },
                     {
                         src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            },
-            {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -207,73 +277,73 @@ const gallery = {
     description: `A photo collection by ${person.name}`,
     // Images from https://pexels.com
     images: [
-        { 
-            src: '/images/gallery/img-01.jpg', 
+        {
+            src: '/images/gallery/img-01.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-02.jpg', 
+        {
+            src: '/images/gallery/img-02.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-03.jpg', 
+        {
+            src: '/images/gallery/img-03.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-04.jpg', 
+        {
+            src: '/images/gallery/img-04.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-05.jpg', 
+        {
+            src: '/images/gallery/img-05.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-06.jpg', 
+        {
+            src: '/images/gallery/img-06.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-07.jpg', 
+        {
+            src: '/images/gallery/img-07.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-08.jpg', 
+        {
+            src: '/images/gallery/img-08.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-09.jpg', 
+        {
+            src: '/images/gallery/img-09.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-10.jpg', 
+        {
+            src: '/images/gallery/img-10.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-11.jpg', 
+        {
+            src: '/images/gallery/img-11.jpg',
             alt: 'image',
             orientation: 'vertical'
         },
-        { 
-            src: '/images/gallery/img-12.jpg', 
+        {
+            src: '/images/gallery/img-12.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-13.jpg', 
+        {
+            src: '/images/gallery/img-13.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
-        { 
-            src: '/images/gallery/img-14.jpg', 
+        {
+            src: '/images/gallery/img-14.jpg',
             alt: 'image',
             orientation: 'horizontal'
         },
