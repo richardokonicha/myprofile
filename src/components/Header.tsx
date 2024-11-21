@@ -68,7 +68,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery } = renderContent(t);
+    const { person, home, about, blog, work, gallery, personal } = renderContent(t);
 
     return (
         <>
@@ -125,6 +125,14 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{work.label}</Flex>
                                 </ToggleButton>
                             )}
+                              { routes['/personal'] && (
+                                <ToggleButton
+                                    prefixIcon="personal"
+                                    href={`/${params?.locale}/personal`}
+                                    selected={pathname.startsWith('/personal')}>
+                                    <Flex paddingX="2" hide="s">{personal.label}</Flex>
+                                </ToggleButton>
+                            )}
                             { routes['/blog'] && (
                                 <ToggleButton
                                     prefixIcon="book"
@@ -141,6 +149,7 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{gallery.label}</Flex>
                                 </ToggleButton>
                             )}
+                            
                         </Flex>
                     </Flex>
                 </Flex>

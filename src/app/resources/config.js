@@ -1,4 +1,4 @@
-const baseURL = 'richardokonicha.vercel.app'
+const baseURL = 'richardokonicha.me'
 
 // Enable localization
 const i18n = false;
@@ -15,7 +15,8 @@ const routes = {
     '/work':    true,
     '/blog':    true,
     '/gallery': true,
-}
+    '/personal': true,
+}   
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts

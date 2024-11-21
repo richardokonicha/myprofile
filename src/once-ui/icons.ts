@@ -20,13 +20,6 @@ import {
 	HiCalendarDays
 } from "react-icons/hi2";
 
-import {
-	PiHouseDuotone,
-	PiUserCircleDuotone,
-	PiGridFourDuotone,
-	PiBookBookmarkDuotone,
-	PiImageDuotone
-} from "react-icons/pi";
 
 import {
 	FaDiscord,
@@ -34,6 +27,11 @@ import {
 	FaLinkedin,
 	FaXTwitter
 } from "react-icons/fa6";
+
+import { FcConferenceCall } from "react-icons/fc";
+import { FcBusinessman, FcGallery, FcPackage, FcReadingEbook, FcDeployment } from "react-icons/fc";
+
+
 
 export const iconLibrary: Record<string, IconType> = {
 	chevronUp: HiChevronUp,
@@ -50,14 +48,15 @@ export const iconLibrary: Record<string, IconType> = {
 	checkCircle: HiCheckCircle,
 	email: HiEnvelope,
 	globe: HiMiniGlobeAsiaAustralia,
-	person: PiUserCircleDuotone,
-	grid: PiGridFourDuotone,
-	book: PiBookBookmarkDuotone,
+	person: FcReadingEbook,
+	personal: FcBusinessman,
+	grid: FcConferenceCall,
+	book: FcDeployment,
 	close: HiMiniXMark,
 	openLink: HiOutlineLink,
 	calendar: HiCalendarDays,
-	home: PiHouseDuotone,
-	gallery: PiImageDuotone,
+	home: FcPackage,
+	gallery: FcGallery,
 	discord: FaDiscord,
 	github: FaGithub,
 	linkedin: FaLinkedin,

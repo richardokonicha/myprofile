@@ -17,7 +17,7 @@ export default function NotFound() {
             </Heading>
             <Text
                 onBackground="neutral-weak">
-                The page you are looking for does not exist.
+                The page you are looking for does not exist. Ask Rich to put something here
             </Text>
         </Flex>
     )
