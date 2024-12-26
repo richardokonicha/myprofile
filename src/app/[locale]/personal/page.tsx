@@ -1,6 +1,6 @@
 import { getPosts } from '@/app/utils/utils';
 import { Flex } from '@/once-ui/components';
-import { Projects } from '@/components/work/Projects';
+import { Projects } from '@/components/personal/Projects';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
@@ -30,7 +30,7 @@ export async function generateMetadata(
 					alt: title,
 				},
 			],
-		},
+		}, 
 		twitter: {
 			card: 'summary_large_image',
 			title,
