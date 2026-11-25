@@ -18,7 +18,7 @@
 		"gray-matter": "^4.0.3",
 		"install": "^0.13.0",
 		"next": "^14.2.18",
-		"next-intl": "^3.25.1",
+		"next-intl": "^4.9.2",
 		"next-mdx-remote": "^5.0.0",
 		"postcss": "^8.4.49",
 		"postcss-preset-env": "^9.6.0",
